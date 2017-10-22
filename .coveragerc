@@ -1,0 +1,3 @@
+[run]
+source = react_pyramid
+omit = react_pyramid/test*
