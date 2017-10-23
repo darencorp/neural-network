@@ -1,4 +1,5 @@
 import React from "react"
+// import Link from "react-router-dom"
 
 export default class Button extends React.Component {
     constructor() {
@@ -7,7 +8,7 @@ export default class Button extends React.Component {
 
     render() {
         return (
-            <a class={"uk-button uk-button-" + this.props.buttonStyle} href={this.props.href}>{this.props.text}</a>
+            <div class={"uk-button uk-button-" + this.props.buttonStyle}>{this.props.text}</div>
         )
     }
 }

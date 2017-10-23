@@ -4,7 +4,7 @@ import Button from "./Button"
 
 const logo = "static/img/neural_network.png";
 
-export default class Main extends React.Component {
+export default class Home extends React.Component {
     constructor() {
         super();
     }

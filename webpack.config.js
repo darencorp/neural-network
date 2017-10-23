@@ -1,7 +1,7 @@
 module.exports = {
-    context: __dirname + "/react_pyramid/static/src",
+    context: __dirname + "/react_pyramid/static/js",
     entry: {
-        index: './js/index.js'
+        index: './src/index.js',
     },
     module: {
         loaders: [
@@ -25,7 +25,7 @@ module.exports = {
         ]
     },
     output: {
-        path: __dirname + "/react_pyramid/static/dist",
+        path: __dirname + "/react_pyramid/static/js/dist",
         filename: "[name].min.js"
     }
 }
