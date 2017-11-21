@@ -1,5 +1,38 @@
+@keyframes radioCheck {
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #7eb2d7;
+    }
+}
 
 main img {
     opacity: 0.5;
     position: absolute;
 }
+
+.radio input[type=radio] {
+    display: none;
+}
+
+.radio label {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border: 2px solid #7eb2d7;
+}
+
+.radio label div {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #7eb2d7;
+}
+
+.radio input[type=radio]:checked + label div {
+    animation-name: radioCheck;
+    animation-duration: 0.5s;
+    background-color: #7eb2d7;
+}
+

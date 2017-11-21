@@ -8,7 +8,7 @@ export default class Button extends React.Component {
 
     render() {
         return (
-            <div class={"uk-button uk-button-" + this.props.buttonStyle}>{this.props.text}</div>
+            <div className={"uk-button uk-button-" + this.props.buttonStyle + " " + this.props.additionalClass}>{this.props.text}</div>
         )
     }
 }

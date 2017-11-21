@@ -1,6 +1,6 @@
 import React from "react"
 
-export default class Preform extends React.Component {
+export default class Explain extends React.Component {
     constructor() {
         super();
     }
@@ -8,7 +8,7 @@ export default class Preform extends React.Component {
     render() {
         return (
             <div>
-                Preform
+                How in works?
             </div>
         )
     }
