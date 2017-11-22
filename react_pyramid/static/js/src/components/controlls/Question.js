@@ -6,7 +6,8 @@ export default class Question extends React.Component {
         super();
     }
 
-    click(str) {
+    answer(answer) {
+        this.props.changeAnswer(this.props.id, answer);
     }
 
     render() {
@@ -15,7 +16,7 @@ export default class Question extends React.Component {
                 <div className="uk-width-2-3 uk-margin-bottom uk-text-large">{this.props.text}</div>
                 <div className="radio uk-width-2-3 uk-flex uk-flex-row uk-flex-around uk-flex-center">
 
-                    <div className="uk-flex uk-flex-column uk-flex-middle" onClick={(str) => this.click("false")}>
+                    <div className="uk-flex uk-flex-column uk-flex-middle" onClick={(answer) => this.answer("false")}>
                         <input type="radio" name={this.props.id} id={this.props.id + "1"}></input>
                         <label for={this.props.id + "1"} className="uk-inline">
                             <div className="uk-position-center"></div>
@@ -23,7 +24,7 @@ export default class Question extends React.Component {
                         <div>False</div>
                     </div>
 
-                    <div className="uk-flex uk-flex-column uk-flex-middle" onClick={(str) => this.click("somewhat")}>
+                    <div className="uk-flex uk-flex-column uk-flex-middle" onClick={(answer) => this.answer("somewhat")}>
                         <input type="radio" name={this.props.id} id={this.props.id + "2"}></input>
                         <label for={this.props.id + "2"} className="uk-inline">
                             <div className="uk-position-center"></div>
@@ -31,7 +32,7 @@ export default class Question extends React.Component {
                         <div>Somewhat true</div>
                     </div>
 
-                    <div className="uk-flex uk-flex-column uk-flex-middle" onClick={(str) => this.click("true")}>
+                    <div className="uk-flex uk-flex-column uk-flex-middle" onClick={(answer) => this.answer("true")}>
                         <input type="radio" name={this.props.id} id={this.props.id + "3"}></input>
                         <label for={this.props.id + "3"} className="uk-inline">
                             <div className="uk-position-center"></div>
