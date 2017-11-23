@@ -1,0 +1,21 @@
+{
+  "name": "express-example",
+  "version": "1.0.0",
+  "description": "expresjs example",
+  "main": "dist",
+  "scripts": {
+    "start": "env/bin/pserve development.ini",
+    "prestart": "webpack",
+    "build": "webpack",
+    "watch": "env/bin/pserve development.ini --reload",
+    "webpack-watch": "webpack -- watch",
+    "install": "npm i --prefix react_pyramid/static",
+    "i": "npm i --prefix react_pyramid/static"
+  },
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/darencorp/neural-network.git"
+  },
+  "author": "darencorp",
+  "license": "ISC"
+}
