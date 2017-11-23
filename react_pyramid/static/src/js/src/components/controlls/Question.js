@@ -1,5 +1,4 @@
 import React from "react"
-// import Link from "react-router-dom"
 
 export default class Question extends React.Component {
     constructor() {
@@ -7,7 +6,7 @@ export default class Question extends React.Component {
     }
 
     answer(answer) {
-        this.props.changeAnswer(this.props.id, answer);
+        this.props.changeAnswer(parseInt(this.props.id), answer);
     }
 
     render() {

@@ -5,6 +5,6 @@ from pyramid.view import view_config
 def my_view(request):
     return dict()
 
-@view_config(route_name='some', renderer='json')
+@view_config(route_name='preform', renderer='json')
 def some(request):
     return dict()
