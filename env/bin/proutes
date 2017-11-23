@@ -1,4 +1,4 @@
-#!/Users/darencorp/Documents/Projects/Python/react-pyramid-example/env/bin/python
+#!/Users/darencorp/Documents/neural-network/env/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'pyramid','console_scripts','proutes'
 __requires__ = 'pyramid'
 import re

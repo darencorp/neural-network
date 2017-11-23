@@ -1,4 +1,4 @@
-#!/Users/darencorp/Documents/Projects/Python/react-pyramid-example/env/bin/python
+#!/Users/darencorp/Documents/neural-network/env/bin/python
 
 import sys
 import getopt

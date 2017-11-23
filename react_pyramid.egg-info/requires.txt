@@ -6,6 +6,7 @@ SQLAlchemy
 transaction
 zope.sqlalchemy
 waitress
+pyramid_webassets
 
 [testing]
 WebTest>=1.3.1
