@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/darencorp/Documents/neural-network/env"
+set -gx VIRTUAL_ENV "/Users/darencorp/Documents/Projects/Python/neural-network/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
