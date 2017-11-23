@@ -18,6 +18,7 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'pyramid_webassets',
+    'setuptools',
     ]
 
 tests_require = [
