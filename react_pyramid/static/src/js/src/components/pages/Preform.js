@@ -16,7 +16,7 @@ export default class Preform extends React.Component {
         this.state.answers[question] = answer
     }
 
-    printAnswer() {
+    preform() {
         axios.post('/preform', {"answers": this.state.answers})
             .then(res => {
                 // TODO: make response
@@ -40,7 +40,7 @@ export default class Preform extends React.Component {
                           changeAnswer={this.makeAnswer.bind(this)}/>
                 <Question text="7. I work harder than anybody else doing my job." id="6"
                           changeAnswer={this.makeAnswer.bind(this)}/>
-                <div onClick={this.printAnswer.bind(this)}>
+                <div onClick={this.preform.bind(this)}>
                     <Button buttonStyle="primary"
                             additionalClass="uk-margin-top uk-margin-large-bottom" text="Check"/>
                 </div>
