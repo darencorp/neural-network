@@ -19,6 +19,7 @@ requires = [
     'waitress',
     'pyramid_webassets',
     'setuptools',
+    'numpy'
     ]
 
 tests_require = [
