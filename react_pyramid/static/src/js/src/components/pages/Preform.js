@@ -8,7 +8,7 @@ export default class Preform extends React.Component {
     constructor(state) {
         super(state);
         this.state = {
-            answers: []
+            answers: [null, null, null, null, null, null, null]
         }
     }
 
@@ -17,10 +17,16 @@ export default class Preform extends React.Component {
     }
 
     preform() {
-        axios.post('/preform', {"answers": this.state.answers})
-            .then(res => {
-                // TODO: make response
+
+        var checked = this.state.answers.filter(answer => answer == null);
+
+        if (checked.length == 0) {
+            axios.post('/preform', {"answers": this.state.answers}).then(res => {
+                alert(res.data)  // react-uikit-alert -- temporary solved
             });
+        } else {
+            alert("Some answers are not checked!")  //react-uikit-alert -- temporary solved
+        }
     }
 
     render() {

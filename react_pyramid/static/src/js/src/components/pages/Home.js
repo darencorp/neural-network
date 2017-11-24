@@ -17,7 +17,7 @@ export default class Home extends React.Component {
                         <img src={logo}></img>
                         <div className="uk-position-center uk-margin-bottom uk-text-center">
                             <h1>Neural network</h1>
-                            <Button buttonStyle="primary" href="#" text="Get It"/>
+                            <a href="/#/preform"><Button buttonStyle="primary" text="Get It"/></a>
                         </div>
                     </div>
                 </div>
