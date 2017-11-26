@@ -1,14 +1,13 @@
-react-pyramid README
+# Naural Network (LEM2)
 ==================
 
-Getting Started
----------------
+## This is project for lesson Team Project
 
-- cd <directory containing this file>
+------------------
 
-- $VENV/bin/pip install -e .
+## Getting Started
 
-- $VENV/bin/initialize_react-pyramid_db development.ini
-
-- $VENV/bin/pserve development.ini
-
+ - install npm from official page
+ - run <b>npm i</b> in main directory
+ - use <b>npm start</b> to start project
+ - open localhost:6543 in your browser
