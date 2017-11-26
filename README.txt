@@ -1,4 +1,4 @@
-# Naural Network (LEM2)
+# Neural Network (LEM2)
 ==================
 
 ## This is project for lesson Team Project
