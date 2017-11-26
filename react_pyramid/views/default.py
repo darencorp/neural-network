@@ -39,6 +39,6 @@ def some(request):
                     answers[4].encode('ascii', 'ignore'), answers[5].encode('ascii', 'ignore'),
                     answers[6].encode('ascii', 'ignore')]
 
-    predict = lem2.predict(predict_data)
+    predict = lem2.predict(predict_data, 'first_fit')
 
     return predict

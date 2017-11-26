@@ -12,7 +12,7 @@ export default class About extends React.Component {
                     Created by Nazariy Mandebura
                 </div>
                 <div className="uk-text-muted">
-                    darencorp: <a className="uk-link">https://github.com/darencorp</a>
+                    darencorp: <a className="uk-link" href="https://github.com/darencorp    ">https://github.com/darencorp</a>
                 </div>
                 <div className="uk-position-bottom-center uk-margin-large-bottom">
                     <div className="uk-flex uk-flex-column uk-flex-middle">
