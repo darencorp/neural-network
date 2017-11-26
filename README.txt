@@ -14,7 +14,8 @@
  
  -----------------
  
- If you have installed Windows you should have installed python 2.7 and remove env/ directory then run:
+ If you have installed Windows you should have installed
+ python 2.7 and remove env/ directory then run:
  - install virtualenv (pip install virtualenv)
  - virtualenv -p python27 env
  - env\Scripts\python.exe setup.py develop
