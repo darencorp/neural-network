@@ -8,6 +8,6 @@
 ## Getting Started
 
  - install npm from official page
- - run <b>npm i</b> in main directory
- - use <b>npm start</b> to start project
+ - run npm i in main directory
+ - use npm start to start project
  - open localhost:6543 in your browser
