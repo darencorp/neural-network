@@ -72,16 +72,24 @@ class LEM2Classifier:
             min_acc (int): the minimum accuracy of printed rules (default 0).
             min_cov (int): the minimum coverage of printed rules (default 0).
         """
+        rules = []
+
         for (acc, cov, conditions, decision) in self._rules:
             if acc * 100 >= min_acc and cov * 100 >= min_cov:
-                print "Rule: ({}, {}) <-".format(class_name, decision),
+                rule = "Rule: ({}, {}) <-".format(class_name, decision)
                 for i, (a, v) in enumerate(conditions):
                     comma = "" if i == 0 else "\b, "
                     if attr_names is None:
-                        print (comma + "({}, {})").format(a, v),
+                        rule += str(comma)
+                        rule += "({}, {})".format(a, v)
                     else:
-                        print (comma + "({}, {})").format(attr_names[a], v),
-                print "[Acc. {0:.1f}, Cov. {1:.1f}]".format(100 * acc, 100 * cov)
+                        rule += comma
+                        rule += "({}, {})".format(attr_names[a], v)
+                rule += "[Acc. {0:.1f}, Cov. {1:.1f}]".format(100 * acc, 100 * cov)
+
+            rules.append(rule)
+
+        return rules
 
     def predict(self, X, method='lers'):
         """

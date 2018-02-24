@@ -8,8 +8,8 @@ from sqlalchemy import (
 from .meta import Base
 
 
-class NeuralNetwork(Base):
-    __tablename__ = 'neural_network'
+class TestSet(Base):
+    __tablename__ = 'test_set'
     id = Column(Integer, primary_key=True, autoincrement=True)
     question0 = Column(Text)
     question1 = Column(Text)
